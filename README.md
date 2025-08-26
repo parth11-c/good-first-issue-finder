@@ -1,98 +1,84 @@
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/EddieHubCommunity/good-first-issue-finder)\
-[![RepoRater](https://repo-rater.eddiehub.org/api/badge?owner=EddieHubCommunity&name=good-first-issue-finder)](https://repo-rater.eddiehub.org/rate?owner=EddieHubCommunity&name=good-first-issue-finder)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/EddieHubCommunity/good-first-issue-finder?style=plastic)
-![GitHub contributors](https://img.shields.io/github/contributors/EddieHubCommunity/good-first-issue-finder)
-[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=plastic&logo=discord&logoColor=white)](https://discord.com/invite/jZQs6Wu)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/EddieHubCommunity/good-first-issue-finder) [![RepoRater](https://repo-rater.eddiehub.org/api/badge?owner=EddieHubCommunity&name=good-first-issue-finder)](https://repo-rater.eddiehub.org/rate?owner=EddieHubCommunity&name=good-first-issue-finder) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/EddieHubCommunity/good-first-issue-finder?style=plastic) ![GitHub contributors](https://img.shields.io/github/contributors/EddieHubCommunity/good-first-issue-finder) [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=plastic&logo=discord&logoColor=white)](https://discord.com/invite/jZQs6Wu)
 
-# Good First Issue Finder by EddieHub
-
-Good First Issue Finder helps new open source contributors to make it easy to get into the world of open source through good first issues.
+# 🚀 Good First Issue Finder by EddieHub
+> Helping **new open source contributors** easily find their first issue 🎉  
+Good First Issue Finder makes contributing to open source **simple, fun, and beginner-friendly**.  
 
 ![eddiehub issue finder](https://github.com/user-attachments/assets/093b84ac-0fb8-43ab-aa55-0992a01d8fc5)
 
-<!-- (Can be only done after merged 😅)
-## Example using Gitpod, ephemeral dev environment in the cloud (free)
+---
 
-![Gitpod GIF with progress bar](https://user-images.githubusercontent.com/46727048/146048451-ed4ff31a-c178-4713-a9e0-95118be742dc.gif)
--->
+## 🌍 Live Website
+👉 [Good First Issue Finder](https://finder.eddiehub.org)
 
-## 👨‍💻 Live Version
+---
 
-Check out the website: [Good First Issue Finder](https://finder.eddiehub.org)
+## 📋 Prerequisites
+Make sure you have the following installed before setup:  
+- [Git](https://git-scm.com/downloads)  
+- [Node.js (LTS Recommended)](https://nodejs.org/en/download/)  
 
-## 👇 Prerequisites
+---
 
-Before installation, please make sure you have already installed the following tools:
+## ⚡ Installation
+1. **Fork** the project [here](https://github.com/EddieHubCommunity/good-first-issue-finder/fork)  
+2. **Clone** your forked repo  
+   → `git clone https://github.com/YOUR_USERNAME/good-first-issue-finder.git`  
+3. Navigate to the project folder  
+   → `cd good-first-issue-finder`  
+4. Install dependencies  
+   → `npm install`  
+5. If you get a **Node/NPM version error**, update Node:  
+   - [Download LTS](https://nodejs.org/en/)  
+   - Or [update via CLI](https://www.geeksforgeeks.org/how-to-update-node-js-and-npm-to-next-version/)  
+6. Create a `.env` file in the root and add your **GitHub OAuth** values (see `.env.example`).  
+   > **OAuth App Setup:**  
+   - Go to [GitHub Docs](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app)  
+   - Callback URL → `http://localhost:5173/api/authentication/callback`  
+   - ⚠️ Never commit your `.env` file!  
+   ![callback url](https://user-images.githubusercontent.com/75534912/191059977-48962f25-4a83-4564-9a17-019ab0783a40.jpg)  
+7. Start the app 🚀  
+   → `npm run dev`  
 
-- [Git](https://git-scm.com/downloads)
-- [NodeJs](https://nodejs.org/en/download/)
+💡 Alternatively, skip setup and use:  
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/EddieHubCommunity/good-first-issue-finder)  
+⚠️ You’ll still need to configure `.env` (Step 6).
 
-## 🛠️ Installation Steps
-
-1. Fork the project [here](https://github.com/EddieHubCommunity/good-first-issue-finder/fork)
-2. Clone the project
-   ```bash
-     git clone https://github.com/YOUR_USERNAME/good-first-issue-finder.git
-   ```
-3. Navigate to the project directory `cd good-first-issue-finder`
-4. Install dependencies with `npm install`
-5. If you encountered error like `engine not compatible with your version on node/npm`
-
-   Upgrade your node version from [Here](https://nodejs.org/en/)
-
-   OR
-
-   By following commands from [Here](https://www.geeksforgeeks.org/how-to-update-node-js-and-npm-to-next-version/)
-
-   We highly recommend installing the current LTS version of node.
-
-6. Create a `.env` file in the root of the project. Then add your GitHub Oauth values (see example in `.env.example` file)
-
-> **Note:** You need to set up an Oauth App(not GitHub App) in Github to get the required values. See the documentation [here](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app).
-> The Callback Url needs to point to the endpoint of the baseURL the app should run on: `http://localhost:5173/api/authentication/callback`.
-> Also, never commit the .env file, it is ignored by Git.
-
-<img width=450 alt="callback url" src="https://user-images.githubusercontent.com/75534912/191059977-48962f25-4a83-4564-9a17-019ab0783a40.jpg" />
-
-7. Run `npm run dev`
-
-Alternatively, skip all the steps by using [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/EddieHubCommunity/good-first-issue-finder)
-
-> **Note:** You still need to do the 6th step as defined earlier even if you are using Gitpod to run the app.
+---
 
 ## 🧪 Testing
+We use [Playwright](https://playwright.dev/) for **End-to-End Tests**.  
+- Install dependencies → `npx playwright install --with-deps`  
+- Run tests → `npm run test`
 
-We're using [Playwright](https://playwright.dev/) for running End-To-End Tests.
-For running the tests you would need to install the playwright dependencies by running
+---
 
-```bash
-npx playwright install --with-deps
-```
+## 🤝 Contributing
+We ❤️ contributions!  
+- Fork & star ⭐ the repo  
+- Create a feature branch  
+- Submit a PR 🚀  
 
-## 👨‍💻 Contributing
-
-- Contributions make the open source community such an amazing place to learn, inspire, and create.
-- Any contributions you make are **greatly appreciated**.
-<!-- Don't yet have guide, uncomment when we have refer https://github.com/EddieHubCommunity/good-first-issue-finder/issues/79
-- Check out our [contribution guidelines](/CONTRIBUTING.md) for more information.
-  -->
-
-## 🛡️ License
-
-Good first issue finder is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 💪 Thanks to all Contributors
-
-Thanks a lot for spending your time helping Good first issue finder grow. Thanks a lot! Keep rocking 🍻
+### ✨ Contributors
+Thanks a lot to all contributors for making this project amazing!  
 
 [![Contributors](https://contrib.rocks/image?repo=EddieHubCommunity/good-first-issue-finder)](https://github.com/EddieHubCommunity/good-first-issue-finder/graphs/contributors)
 
-## 🙏 Support
+ 
+<a href="https://github.com/parth11-c">
+  <img src="https://avatars.githubusercontent.com/u/174133272?v=4" width="60px;" style="border-radius:50%;" alt="ParthBhende"/>
+</a>  
 
-This project needs a ⭐️ from you. Don't forget to leave a star ⭐️.
+## 🛡️ License
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.  
 
-## Our Pledge
+---
 
-We take participation in our community as a harassment-free experience for everyone and we pledge to act in ways to contribute to an open, welcoming, diverse and inclusive community.
+## ⭐ Support
+If this project helped you, don’t forget to **leave a star ⭐**!  
 
-If you have experienced or been made aware of unacceptable behaviour, please remember that you can report this. Read our [Code of Conduct](https://github.com/EddieHubCommunity/good-first-issue-finder/blob/main/CODE_OF_CONDUCT.md).
+---
+
+## 📜 Our Pledge
+We promise to keep our community **open, inclusive, and harassment-free**.  
+If you face any issue, kindly refer to our [Code of Conduct](https://github.com/EddieHubCommunity/good-first-issue-finder/blob/main/CODE_OF_CONDUCT.md).  
